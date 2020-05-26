@@ -1,1 +1,66 @@
 /*WIP*/
+
+body{
+	background-color: black;
+}
+
+.material-icons{
+	color: white;
+}
+
+#menu{
+	position: relative;
+	top: 3px;
+}
+
+.logo{
+	width: 80px;
+	background: black;
+	margin:0 10px;
+}
+
+.container{
+	/*display: inline-block;*/
+	width: 100%;
+}
+
+.header-container{
+	display: inline-block;
+}
+
+.header-container#end{
+	float: right
+}
+
+.header-container#center{
+	
+	align-items: center;
+	/*margin: 0 auto;*/
+}
+
+/*
+#searchbar{
+	
+	display: block;
+	align-items: center;
+	width: 25vw;
+   
+}*/
+
+nav{
+	display: inline-block;
+	float: right;
+	
+}
+
+nav i{
+	padding-top: 3px;
+	padding-right: 12px;
+}
+
+/*
+#searchbar{
+	display: inline-block;
+	float: center;
+}
+*/
