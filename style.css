@@ -1,7 +1,13 @@
 /*WIP*/
 
-body{
-	background-color: black;
+html{
+	background: #181818;
+    color: white;
+    font-family: "Roboto", "Arial", sans-serif
+}
+
+p,h2,i,span{
+	color: white
 }
 
 .material-icons{
@@ -19,41 +25,57 @@ body{
 	margin:0 10px;
 }
 
-.container{
-	/*display: inline-block;*/
-	width: 100%;
+
+header{
+	margin-bottom: 30px;
 }
+
 
 .header-container{
 	display: inline-block;
+	/*overflow: hidden;*/
 }
 
+.header-container#start,
+.header-container#center,
 .header-container#end{
-	float: right
+	/*might be a good idea to change it to flex*/
+
+  	/*overflow: hidden;*/
+}
+
+.header-container#start{
+	/*auto resizes dynamically according to the size of page*/
+	width: auto;
 }
 
 .header-container#center{
-	
-	align-items: center;
-	/*margin: 0 auto;*/
+	width: 45vw;
+	text-align: center;
 }
 
-/*
-#searchbar{
-	
-	display: block;
-	align-items: center;
-	width: 25vw;
-   
-}*/
-
-nav{
-	display: inline-block;
+.header-container#end{
+	width: auto;
 	float: right;
 	
 }
 
+#searchIcon{
+	position: relative;
+	top: 8px;
+	margin: 0;
+	padding:0;
+}
+
+nav{
+	display: inline-block;
+	float: right;
+
+	
+}
+
 nav i{
+
 	padding-top: 3px;
 	padding-right: 12px;
 }
@@ -64,3 +86,156 @@ nav i{
 	float: center;
 }
 */
+
+section{
+	width: 65%;
+	margin: 0;
+	display: inline-block;
+}
+
+#video_container{
+	display: inline-block;
+	width: 100%;
+	/*margin-top: 30px;*/
+	margin-bottom: 20px;
+	float: left;
+}
+
+.name{
+	
+	color: white;
+}
+
+.info-text{
+	display: inline-block;
+	font-family: "Roboto", "Arial", sans-serif
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+
+#date{
+	display: inline-block;
+}
+
+.tool-center,.tools{
+	display: inline-block;
+}
+
+.tool-center{
+	width: auto;
+	float: right;
+}
+
+.tools{
+	padding: 10px;
+}
+
+.account-icon{
+	margin-top: 10px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+.account-name{
+	display: inline-block;
+	/*vertical-align  */
+	vertical-align: 10px;
+}
+
+.account-name p{
+	padding-left: 10px;
+	margin: 0;
+	
+}
+
+#subscribers{
+	color: #aaaaaa;
+  	font-size: 0.8rem;
+}
+
+.subscribe-btn{
+	display: inline-block;
+	float: right;
+	margin: 25px;
+	/*margin-right: 60px*/
+}
+
+.btn{
+	border:none;
+	font-size: 0.9rem;
+	/*font-family: "Roboto", "Arial", sans-serif*/
+	width: 115px;
+	height: 36px;
+	color: white;
+	background-color: red;
+}
+
+.description{
+	margin-left: 60px;
+}
+
+#showmore{
+	color: #aaaaaa;
+  	font-size: 0.8rem;
+  	text-decoration:none;
+}
+
+aside{
+	/*vertical-align: top;*/
+	width: 34%;
+	/*display: inline-block;*/
+	float: right;
+}
+
+.aside-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	float: left
+	width: 100%;
+}
+
+.aside-container p{
+	padding-right: 15px
+}
+
+#autoplay{
+	/*display: inline-block;*/
+    /*width: 32px;*/
+    display: flex;
+    position: relative;
+    /*z-index: -1;*/
+}
+
+#toggle{
+	/*padding-bottom: 5px;*/
+	position: relative;
+	top: 5px;
+	border-top: 5px;
+	background-color: #323232;
+	border-radius: 10px;
+	width: 32px;
+    height: 14px;
+
+	/*display: inline-block;
+    
+    border-radius: 10px;
+    background-color: #323232;
+    position: relative;
+    z-index: -1;*/
+}
+
+/*#toggle{
+	font-size: 22px;
+    position: relative;
+    top: -4px;
+    left: -1px;
+    color: #909090
+}*/
+

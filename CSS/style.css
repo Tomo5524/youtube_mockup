@@ -1,0 +1,113 @@
+/*WIP*/
+
+body{
+	background-color: black;
+}
+
+p,h2,i,span{
+	color: white
+}
+
+.material-icons{
+	color: white;
+}
+
+#menu{
+	position: relative;
+	top: 3px;
+}
+
+.logo{
+	width: 80px;
+	background: black;
+	margin:0 10px;
+}
+
+.container{
+	/*display: inline-block;*/
+	width: 100%;
+}
+
+.header-container{
+	display: inline-block;
+	/*overflow: hidden;*/
+}
+
+.header-container#start,
+.header-container#center,
+.header-container#end{
+	/*might be a good idea to change it to flex*/
+
+  	/*overflow: hidden;*/
+}
+
+.header-container#start{
+	/*auto resizes dynamically according to the size of page*/
+	width: auto;
+}
+
+.header-container#center{
+	width: 45vw;
+	text-align: center;
+}
+
+.header-container#end{
+	width: auto;
+	float: right;
+	
+}
+
+#searchIcon{
+	position: relative;
+	top: 8px;
+	margin: 0;
+	padding:0;
+}
+
+nav{
+	display: inline-block;
+	float: right;
+
+	
+}
+
+nav i{
+
+	padding-top: 3px;
+	padding-right: 12px;
+}
+
+/*
+#searchbar{
+	display: inline-block;
+	float: center;
+}
+*/
+
+#content{
+	width: 400px;
+	height: 400px;
+}
+
+.name{
+	color: white;
+}
+
+.tool-left{
+	display: inline-block;
+}
+
+.tool-center,.tools{
+	display: inline-block;
+}
+
+.tools-center{
+	width: auto;
+	float: right;
+	padding: 10px;
+}
+
+
+#likes_meter{
+	color: white;
+}
