@@ -46,16 +46,17 @@ header{
 
 #start{
 	/*auto resizes dynamically according to the size of page*/
-	width: auto;
+	width: 25%;
+	float: left;
 }
 
 #center{
-	width: 75%;
+	width: 50%;
 	text-align: center;
 }
 
 #end{
-	width: auto;
+	width: 25%;
 	float: right;
 	
 }
@@ -66,16 +67,19 @@ header{
 }*/
 
 #searchbar{
-	width: 600px;
+	width: 70%;
+    /*max-width: 550px;*/
+    box-sizing: border-box;
 	line-height: 30px;
 	font-size: 20px;
 }
 
 #serachbtn{
+	width: 8%;
 	position: relative;
 	left: -5px;
 	display: inline-block;
-	width: 70px;
+	/*width: 70px;*/
 	height: 36px;
 	margin: 0;
 	padding:0;
@@ -83,6 +87,7 @@ header{
 }
 
 #searchIcon{
+	display: inline-block;
 	position: relative;
 	top: 5px;
 }
