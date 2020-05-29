@@ -20,8 +20,7 @@ p,h2,i,span{
 }
 
 .logo{
-	width: 80px;
-	background: black;
+	width: 100px;
 	margin:0 10px;
 }
 
@@ -32,39 +31,60 @@ header{
 
 
 .header-container{
+	margin-top: 5px;
+	margin-left: 5px;
 	display: inline-block;
+	width: 100%;
 	/*overflow: hidden;*/
 }
 
-.header-container#start,
-.header-container#center,
-.header-container#end{
-	/*might be a good idea to change it to flex*/
-
-  	/*overflow: hidden;*/
+#start,
+#center,
+#end{
+	display: inline-block;
 }
 
-.header-container#start{
+#start{
 	/*auto resizes dynamically according to the size of page*/
 	width: auto;
 }
 
-.header-container#center{
-	width: 45vw;
+#center{
+	width: 75%;
 	text-align: center;
 }
 
-.header-container#end{
+#end{
 	width: auto;
 	float: right;
 	
 }
 
-#searchIcon{
+/*#searchbox{
+	display: flex;
+	align-items: baseline;
+}*/
+
+#searchbar{
+	width: 600px;
+	line-height: 30px;
+	font-size: 20px;
+}
+
+#serachbtn{
 	position: relative;
-	top: 8px;
+	left: -5px;
+	display: inline-block;
+	width: 70px;
+	height: 36px;
 	margin: 0;
 	padding:0;
+	background-color: gray;
+}
+
+#searchIcon{
+	position: relative;
+	top: 5px;
 }
 
 nav{
@@ -115,7 +135,7 @@ section{
 }
 
 
-#date{
+.span-text{
 	display: inline-block;
 }
 
@@ -154,7 +174,7 @@ section{
 	
 }
 
-#subscribers{
+.small-description{
 	color: #aaaaaa;
   	font-size: 0.8rem;
 }
@@ -201,41 +221,57 @@ aside{
 	width: 100%;
 }
 
-.aside-container p{
-	padding-right: 15px
-}
+
 
 #autoplay{
-	/*display: inline-block;*/
-    /*width: 32px;*/
-    display: flex;
-    position: relative;
-    /*z-index: -1;*/
+	display: inline-block;
 }
+
+#autoplay p{
+	margin: 0;
+}
+
 
 #toggle{
-	/*padding-bottom: 5px;*/
 	position: relative;
-	top: 5px;
-	border-top: 5px;
-	background-color: #323232;
+	top: 10px;
+	background-color: #909090;
 	border-radius: 10px;
 	width: 32px;
-    height: 14px;
-
-	/*display: inline-block;
+    height: 15px;
+	display: inline-block;
     
-    border-radius: 10px;
-    background-color: #323232;
-    position: relative;
-    z-index: -1;*/
 }
 
-/*#toggle{
+#toggle i{
 	font-size: 22px;
     position: relative;
     top: -4px;
-    left: -1px;
-    color: #909090
-}*/
+    left: -2px;
+    color: white;
+}
+
+.side-img-container{
+	display: flex;
+	padding-bottom: 15px;
+	/*flex-direction: column;*/
+}
+
+.side-img{
+	display: flex;
+}
+
+.side-img-description{
+	display: flex;
+	flex-direction: column;
+}
+
+.side-img-description h3{
+	margin: 0;
+}
+
+.side-img-description p{
+	margin: 0;
+}
+
 

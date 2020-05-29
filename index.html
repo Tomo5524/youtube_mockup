@@ -11,18 +11,23 @@
 </head>
 <body>
 	<header>
-		<div class='container'>
-			<div class='header-container' id='start'>
+		<div class='header-container'>
+			<div id='start'>
 				<i class="material-icons" id='menu'>menu</i>
 				<img class="logo" src="images/logo.svg" alt="YouTube Logo" />
 			</div>
 			
-			<div class='header-container' id='center'>
-				 <input type="text" id='searchbar' placeholder="search" name="search">
-				 <i class="material-icons" id='searchIcon'>search</i>
+			<div id='center'>
+				<div id='search-box'>
+					<input type="text" id='searchbar' placeholder="search" name="search">
+					<div id='serachbtn'>
+						<i class="material-icons" id='searchIcon'>search</i>
+					</div>
+				 	
+				</div>
 			</div>
 
-			<div class='header-container' id='end'>
+			<div id='end'>
 				<nav>
 				<i class="material-icons">video_call</i>
 		     	<i class="material-icons">apps</i>
@@ -44,9 +49,9 @@
 			</div>
 			<div class='info-text'>
 				<!-- span in inline element -->
-				<span id='view'>101,576,462 views</span>
+				<span class='span-text'>101,576,462 views</span>
 				<span>•</span>
-				<span id= 'date'>Mar 3, 2010</span>
+				<span class='span-text'>Mar 3, 2010</span>
 			</div>
 			<div class='tool-center'>
 				<div class='tools'>
@@ -72,35 +77,179 @@
 			</div>
 			<div class='account-name'>
 				<p>Eric Clapton</p>
-				<p id='subscribers'>298,000,000,000 subscribers</p>
+				<p class='small-description' id='subscribers'>298,000,000,000 subscribers</p>
 			</div>
 			<div class='subscribe-btn'>
 				<button class='btn'>SUBSCRIBE</button>
 			</div>
 			<div class='description'>
 				<p>"Wonderful Tonight (Live)" by Eric Clapton from Slowhand, available now.</p>
-				<a id='showmore' href="#">SHOW MORE</a>
+				<a class='small-description' id='showmore' href="#">SHOW MORE</a>
 			</div>
 		</div>
 	</section>
 	<aside>
 		<div class='aside-container'>
 			<p>UpNext</p>
-			<div id='autoplay'>
-				<p>AUTOPLAY<i id='toggle' class="material-icons">lens</i></p>
+			<div id='autoplay-container'>
+				<div id = 'autoplay'>
+					<p>AUTOPLAY</p>
+				</div>
+				<div id='toggle'>
+					<i class="material-icons">lens</i>
+				</div>
+				
 				<!-- <p>AUTOPLAY<i id='toggle' class="material-icons md-36">toggle_off</i></p> -->
 			</div>
-			
 		</div>
-
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/u9sq3ME0JHQ/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAa2TAAXBke0ZOR9mlXsqt5KDIx5A">
+			</div>
+			<div class='side-img-description'>
+				<h3>Etta James - At Last - Lyrics</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>REBEL SONGBIRD</p>
+					
+					<span class='small-description'>63M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>7 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<hr style="border-top: 1px;margin-top: 0;">
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/EqPtz5qN7HM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDJjjQA59bEhpPSKBRVUQGL8qxihQ">
+			</div>
+			<div class='side-img-description'>
+				<h3>Eagles - Hotel California (Lyrics)</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>Chili World</p>
+					
+					<span class='small-description'>485M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>4 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/OMD8hBsA-RI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDva7FFTcE5TlxPE5YxhVKMDcfgiQ">
+			</div>
+			<div class='side-img-description'>
+				<h3>Journey - Faithfully (Official Video)</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>journey</p>
+					
+					<span class='small-description'>166M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>10 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/hhe0ULrAHIw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC1FWv7NW79wajA1e4FC5EGxO4_aw">
+			</div>
+			<div class='side-img-description'>
+				<h3>Desperado - Eagles</h3>
+				<div class='side-img-text'>
+					<p class='small-description'></p>
+					<span class='small-description'>1.7M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>4 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/VqaKisKIyUo/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBbRD6RDwHnffUuYlAXHggj0QpZPA">
+			</div>
+			<div class='side-img-description'>
+				<h3>Daberge - I Like It</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>Vega Funk</p>
+					
+					<span class='small-description'>22M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>10 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/B3MFbhwfEXU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDivyht-u89AujQ6l50quIJnIAr2A">
+			</div>
+			<div class='side-img-description'>
+				<h3>Off The Wall - MICHAEL JACKSON '1979</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>ALL NIGHT LONG</p>
+					<span class='small-description'>14M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>7 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/iyLdoQGBchQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBRPHC6kLLwxuW1XTFXzn5_YcxyPw">
+			</div>
+			<div class='side-img-description'>
+				<h3>Kaoma - Lambada (Official Video) 1989 HD</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>ClubMusic80s</p>
+					
+					<span class='small-description'>134M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>6 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/MjtOzLfebgY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAOnbCn9xtS0bVVFo1YUbV7BCejuw">
+			</div>
+			<div class='side-img-description'>
+				<h3>The Gap Band - Outstanding</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>Keith Block</p>
+					<span class='small-description'>46M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>11 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/FTQbiNvZqaY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBlCGTkdz0mSAvo-jbBRYjXoxp-kQ">
+			</div>
+			<div class='side-img-description'>
+				<h3>Toto - Africa (Official Music Video)</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>Toto Toto</p>
+					<span class='small-description'>573M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>7 years ago</span>
+				</div>
+			</div>	
+		</div>
+		<div class='side-img-container'>
+			<div class="side-img">
+				<img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/rbaoKL1Ei0c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCnfJXAcNL6MG85-_wHo8s0Yb4X2Q">
+			</div>
+			<div class='side-img-description'>
+				<h3>This Will Be (An Everlasting Love)</h3>
+				<div class='side-img-text'>
+					<p class='small-description'>NatalieColeMusic</p>
+					
+					<span class='small-description'>3.4M views</span>
+					<span class='small-description'>•</span>
+					<span class='small-description'>9 years ago</span>
+				</div>
+			</div>	
+		</div>
 	</aside>
-	
-
-
-
-
-
-
 </body>
 </html>
 
